@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Diet Recommendation System</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h2>Diet Recommendation System</h2>
+        <form id="dietForm">
+            <label>Age: <input type="number" id="age" required></label>
+            <label>Height (cm): <input type="number" id="height" required></label>
+            <label>Weight (kg): <input type="number" id="weight" required></label>
+            <label>Gender:
+                <select id="gender">
+                    <option value="male">Male</option>
+                    <option value="female">Female</option>
+                </select>
+            </label>
+            <label>Activity Level:
+                <select id="activity">
+                    <option value="1.2">Sedentary</option>
+                    <option value="1.375">Light Exercise</option>
+                    <option value="1.55">Moderate Exercise</option>
+                    <option value="1.725">Heavy Exercise</option>
+                    <option value="1.9">Athlete</option>
+                </select>
+            </label>
+            <label>Weight Loss Plan (Calories Deficit per day):
+                <select id="goal">
+                    <option value="500">Lose Weight</option>
+                    <option value="0">Maintain Weight</option>
+                    <option value="-500">Gain Weight</option>
+                </select>
+            </label>
+            <label>Meals per Day:
+                <select id="meals">
+                    <option value="3">3 Meals</option>
+                    <option value="4">4 Meals</option>
+                    <option value="5">5 Meals</option>
+                </select>
+            </label>
+            <button type="button" id="calculateBtn">Calculate</button>
+        </form>
+        <div id="results"></div>
+        <div id="user-data"></div>
+    </div>
+
+    <!-- Link to JavaScript file -->
+    <script type="module" src="script.js"></script>
+</body>
+</html>
