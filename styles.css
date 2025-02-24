@@ -1,17 +1,59 @@
 body {
     font-family: Arial, sans-serif;
     display: flex;
-    justify-content: center;
-    align-items: center;
     height: 100vh;
     background-color: #f4f4f4;
+    margin: 0;
 }
 
-.container {
-    background: white;
+/* Sidebar Navigation */
+#sidebar {
+    width: 250px;
+    background: #333;
+    color: white;
     padding: 20px;
+    height: 100vh;
+    position: fixed;
+    left: 0;
+    top: 0;
+}
+
+#sidebar h3 {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+#sidebar ul {
+    list-style: none;
+    padding: 0;
+}
+
+#sidebar ul li {
+    margin: 15px 0;
+}
+
+#sidebar ul li a {
+    color: white;
+    text-decoration: none;
+    display: block;
+    padding: 10px;
+    border-radius: 5px;
+    transition: background 0.3s;
+}
+
+#sidebar ul li a:hover {
+    background: #575757;
+}
+
+/* Main Content */
+.container {
+    margin-left: 270px; /* Adjusted for sidebar */
+    padding: 20px;
+    background: white;
     border-radius: 10px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    max-width: 600px;
+    width: 100%;
 }
 
 form {
@@ -31,6 +73,10 @@ button {
     border: none;
     cursor: pointer;
     border-radius: 5px;
+}
+
+button:hover {
+    background-color: #218838;
 }
 
 #results {
